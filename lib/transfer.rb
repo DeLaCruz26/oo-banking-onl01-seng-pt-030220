@@ -30,6 +30,12 @@ attr_accessor :status
   end
 
   def reverse_transfer
-    
+    if valid? && receiver.balance > amount && self.status == "pending"
+      receiver.balance -= amount
+      sender.balance += amount
+      self.status = "complete"
+    else
+      reject_transfer
+    end
   end
 end
