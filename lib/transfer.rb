@@ -23,4 +23,8 @@ attr_accessor :status
       reject_transfer
     end
   end
+
+  def reject_transfer
+    self.status = "rejected"
+  end
 end
