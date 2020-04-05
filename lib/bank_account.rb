@@ -21,6 +21,7 @@ attr_accessor :balance, :status
     if @status = "open" && balance > 0
       true
     elsif @status = "open" || balance < 0
+      false
     end
   end
 end
