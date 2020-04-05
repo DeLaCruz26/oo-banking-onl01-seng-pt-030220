@@ -11,6 +11,6 @@ attr_accessor :status
   end
 
   def valid?
-    self.status = "open" && BankAccount.status = "open"
+    sender.valid? && BankAccount.status = "open"
   end
 end
