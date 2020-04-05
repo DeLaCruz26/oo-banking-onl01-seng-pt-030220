@@ -9,4 +9,8 @@ attr_accessor :status
     @receiver = receiver
     @amount = amount
   end
+
+  def valid?
+    
+  end
 end
