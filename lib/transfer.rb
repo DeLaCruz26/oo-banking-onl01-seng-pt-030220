@@ -15,8 +15,7 @@ attr_accessor :status
   end
 
   def execute_transaction
-    if valid? && sender.status = "open" && receiver.status = "open"
-      balance = 950
+    if valid? && sender.balance > amount
     end
   end
 end
