@@ -17,5 +17,6 @@ attr_accessor :status
   def execute_transaction
     if valid? && sender.status = "open" && receiver.status = "open"
       balance = 950
+    end
   end
 end
