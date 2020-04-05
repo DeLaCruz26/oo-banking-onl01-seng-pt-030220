@@ -15,6 +15,6 @@ attr_accessor :status
   end
 
   def execute_transaction
-    if valid? && sender.status = "open"
+    if valid? && sender.status = "open" && receiver.status = "open"
   end
 end
