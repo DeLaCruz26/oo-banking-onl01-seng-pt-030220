@@ -18,6 +18,8 @@ attr_accessor :balance, :status
   end
 
   def valid?
-    valid? === true ? @status = "open" : balance > 0
+    if @status = "open" && balance > 0
+      valid? === true
+    end
   end
 end
