@@ -15,7 +15,7 @@ attr_accessor :status
   end
 
   def execute_transaction
-    if valid? && sender.balance > amount && self.status = "pending"
+    if valid? && receiver.balance > amount && self.status = "pending"
       receiver.balance -= amount
       sender.balance += amount
       self.status = "complete"
