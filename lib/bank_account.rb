@@ -22,6 +22,6 @@ attr_accessor :balance, :status
   end
 
   def close_account
-    self.status == "closed"
+    self.status = "closed"
   end
 end
