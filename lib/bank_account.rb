@@ -24,6 +24,7 @@ attr_accessor :balance, :status
     @closed.status = "closed"
 
     if @status = "open"
+      true
     end
   end
 end
