@@ -18,11 +18,11 @@ attr_accessor :balance, :status
   end
 
   def valid?
-    if 
+    if
       @status = "open" && balance > 0
-    elsif 
+    elsif
       @status = "open" || balance < 0
-    else 
+    else
       @status = "closed" && balance > 0
     end
   end
