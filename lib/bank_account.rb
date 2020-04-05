@@ -20,7 +20,7 @@ attr_accessor :balance, :status
   def valid?
     if @status = "open" && balance > 0
       true
-    elsif @status = "open" || balance < 0
+    else @status = "open" || balance < 0
       false
     end
   end
