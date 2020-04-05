@@ -5,6 +5,6 @@ attr_accessor :transfer, :receiver
 
   def initialize(transfer, sender, receiver)
     @transfer = transfer
-    sender = BankAccount
+    sender = BankAccount.new(name)
   end
 end
