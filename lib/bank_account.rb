@@ -22,8 +22,8 @@ attr_accessor :balance, :status
     @broke.balance = 0
     @closed = self.new(name)
     @closed.status = "closed"
-
-    
+      
+    if @status = "open"
     end
   end
 end
