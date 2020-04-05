@@ -18,13 +18,7 @@ attr_accessor :balance, :status
   end
 
   def valid?
-    @broke = self.new(name)
-    @broke.balance = 0
-    @closed = self.new(name)
-    @closed.status = "closed"
-
-    if @status = "open"
-      true
+  balance > 0 && @status == "open"
     end
   end
 end
