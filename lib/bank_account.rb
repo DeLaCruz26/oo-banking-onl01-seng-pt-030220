@@ -10,7 +10,7 @@ attr_accessor :balance, :status
   end
 
   def deposit(money)
-    money = @balance = 2000
+    self.balance += money
   end
 
   def display_balance
