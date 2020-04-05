@@ -26,5 +26,6 @@ attr_accessor :status
 
   def reject_transfer
     self.status = "rejected"
+    "Tra rejected. Please check your account."
   end
 end
